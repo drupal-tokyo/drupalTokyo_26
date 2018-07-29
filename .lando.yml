@@ -1,0 +1,7 @@
+name: drupal-tokyo-25
+recipe: drupal8
+config:
+  webroot: web
+services:
+  appserver:
+    xdebug: true
