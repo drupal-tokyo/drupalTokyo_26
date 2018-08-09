@@ -1,0 +1,16 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+      base_url: http://drupaltokyo25.lndo.site/ # Replace with your site's URL
+    Drupal\DrupalExtension:
+      blackbox: ~
+      api_driver: 'drupal' 
+      drupal: 
+        drupal_root: '/app/web' 
