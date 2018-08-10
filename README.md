@@ -30,3 +30,14 @@ lando composer install
 lando drush site:install --sites-subdir=default demo_umami --db-url=mysql://drupal8:drupal8@database/drupal8
 lando drush user:login
 ```
+
+## Behatテスト
+※ Drupalがすでにインストールされている必要があります。
+### テストの起動
+```
+lando behat
+```
+### 定義(Definition)一覧の確認方法
+```
+lando behat -dl
+```

@@ -5,3 +5,7 @@ config:
 services:
   appserver:
     xdebug: true
+tooling:
+  behat:
+    service: appserver
+    cmd: /app/vendor/bin/behat
