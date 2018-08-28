@@ -27,7 +27,10 @@ lando db-import ./db_25.sql.gz
 ```
 lando start
 lando composer install
-lando drush site:install --sites-subdir=default demo_umami --db-url=mysql://drupal8:drupal8@database/drupal8
+// デモ用の画像ファイル類配置のため site:install
+lando drush site:install --sites-subdir=default demo_umami --db-url=mysql://drupal8:drupal8@database/drupal8 -y
+lando db-import ./db_25.sql.gz
+lando drush config:import
 lando drush user:login
 ```
 
