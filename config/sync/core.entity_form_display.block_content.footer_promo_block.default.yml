@@ -10,8 +10,14 @@ dependencies:
     - field.field.block_content.footer_promo_block.field_title
     - image.style.thumbnail
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: VAumQyy5oW7vNz9aA_tbN3mYG4Z4mYKvsBDAKgubC6E
 id: block_content.footer_promo_block.default

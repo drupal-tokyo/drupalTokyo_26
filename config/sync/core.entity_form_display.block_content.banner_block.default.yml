@@ -10,8 +10,14 @@ dependencies:
     - field.field.block_content.banner_block.field_title
     - image.style.thumbnail
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: Lr6agp3CQNqb_wx2pFxkYwq96KWCDcUGKUU0cY0_2N4
 id: block_content.banner_block.default

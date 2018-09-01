@@ -7,7 +7,13 @@ dependencies:
     - field.field.block_content.disclaimer_block.field_copyright
     - field.field.block_content.disclaimer_block.field_disclaimer
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: sMxKA7nfPNtnJR0r5Bs6er7ybQI0JdbfpA8wWCOj_XI
 id: block_content.disclaimer_block.default

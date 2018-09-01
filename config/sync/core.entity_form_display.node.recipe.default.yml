@@ -17,9 +17,15 @@ dependencies:
     - image.style.thumbnail
     - node.type.recipe
   module:
+    - field_layout
     - image
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: DKGu0Ml8Jlk8EXPjIpz3ARAChnyuj5osrp1zZdGpRdQ
 id: node.recipe.default

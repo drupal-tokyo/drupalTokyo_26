@@ -18,9 +18,65 @@ dependencies:
     - node.type.recipe
     - responsive_image.styles.3_2_image
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - options
     - responsive_image
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          f368f42d-c701-4d2d-bdbe-a1649168933e:
+            uuid: f368f42d-c701-4d2d-bdbe-a1649168933e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:recipe:field_image'
+              formatter:
+                label: hidden
+                settings:
+                  responsive_image_style: 3_2_image
+                  image_link: content
+                third_party_settings: {  }
+                type: responsive_image
+            additional: {  }
+            weight: 0
+          419bd1c2-d092-4f50-b162-a1801bcf5c16:
+            uuid: 419bd1c2-d092-4f50-b162-a1801bcf5c16
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:recipe:field_difficulty'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 1
+          33e85e57-10be-42d2-a033-2ade0d26538e:
+            uuid: 33e85e57-10be-42d2-a033-2ade0d26538e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:recipe:links'
+            additional: {  }
+            weight: 2
 _core:
   default_config_hash: vw0R3pZj98wJKp_WVo-3OMMM1N8zOgDrjYd-adCuKyM
 id: node.recipe.highlighted_small

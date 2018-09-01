@@ -9,9 +9,81 @@ dependencies:
     - node.type.article
     - responsive_image.styles.3_2_image
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - responsive_image
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          595d2c15-0962-4082-b2e8-aaadbad78ee7:
+            uuid: 595d2c15-0962-4082-b2e8-aaadbad78ee7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_tags'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          c14365e9-4d50-4248-a1ee-cd21f5e768ee:
+            uuid: c14365e9-4d50-4248-a1ee-cd21f5e768ee
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_image'
+              formatter:
+                type: responsive_image
+                settings:
+                  responsive_image_style: 3_2_image
+                  image_link: ''
+                third_party_settings: {  }
+                label: hidden
+            additional: {  }
+            weight: 1
+          5dda0aa3-f709-4770-acea-4763bf19cd43:
+            uuid: 5dda0aa3-f709-4770-acea-4763bf19cd43
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:body'
+              formatter:
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+                label: hidden
+            additional: {  }
+            weight: 2
+          6cd9bed6-3db1-4b6c-ad0d-7507bbf17798:
+            uuid: 6cd9bed6-3db1-4b6c-ad0d-7507bbf17798
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:links'
+            additional: {  }
+            weight: 3
 _core:
   default_config_hash: _L_3i_Js9-dZMLX2RRJqeryWzABKXwF4PS3Kss1kqQ0
 id: node.article.default

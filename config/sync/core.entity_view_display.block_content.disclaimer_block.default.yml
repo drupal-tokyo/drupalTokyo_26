@@ -7,7 +7,51 @@ dependencies:
     - field.field.block_content.disclaimer_block.field_copyright
     - field.field.block_content.disclaimer_block.field_disclaimer
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          04d669fa-7718-4f11-aaa1-329c30bcdb17:
+            uuid: 04d669fa-7718-4f11-aaa1-329c30bcdb17
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:disclaimer_block:field_disclaimer'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          8a9330d2-685c-4cea-8562-6739828f2116:
+            uuid: 8a9330d2-685c-4cea-8562-6739828f2116
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:disclaimer_block:field_copyright'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
 _core:
   default_config_hash: JGfJhp1GQ95jeCKChKVTLBjB593GRjSrlYtt9KZM79Q
 id: block_content.disclaimer_block.default

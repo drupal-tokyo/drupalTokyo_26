@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - contact.form.feedback
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: vH_AF8I63rYq7b-9IZyopPGkYA8V02w_tOwQv7Rf7Pg
 id: contact_message.feedback.default

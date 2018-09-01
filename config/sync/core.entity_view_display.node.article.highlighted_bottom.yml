@@ -10,8 +10,39 @@ dependencies:
     - node.type.article
     - responsive_image.styles.3_2_image
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - responsive_image
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          74373779-7c62-483a-9e5a-af109ffdf326:
+            uuid: 74373779-7c62-483a-9e5a-af109ffdf326
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_image'
+              formatter:
+                type: responsive_image
+                settings:
+                  responsive_image_style: 3_2_image
+                  image_link: content
+                third_party_settings: {  }
+                label: hidden
+            additional: {  }
+            weight: 0
 _core:
   default_config_hash: zbLeymWATnw_s8MsMXgHuiqIfkd3pxEsIKECZhyD-dY
 id: node.article.highlighted_bottom

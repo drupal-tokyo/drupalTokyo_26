@@ -18,8 +18,39 @@ dependencies:
     - node.type.recipe
     - responsive_image.styles.3_2_image
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - responsive_image
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          eaaeeeb2-ee71-4dc5-82a5-d3af7e80a9d1:
+            uuid: eaaeeeb2-ee71-4dc5-82a5-d3af7e80a9d1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:recipe:field_image'
+              formatter:
+                label: hidden
+                settings:
+                  responsive_image_style: 3_2_image
+                  image_link: content
+                third_party_settings: {  }
+                type: responsive_image
+            additional: {  }
+            weight: 0
 _core:
   default_config_hash: GPVq-4lsfUITq25OoNX807e35dbKhPXil-i_8kMW_nE
 id: node.recipe.highlighted_top
