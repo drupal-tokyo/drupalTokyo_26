@@ -16,8 +16,8 @@ lando drush config:import
 DBエクスポート
 
 ```
-lando db-export ./db_25.sql.gz
-lando db-import ./db_25.sql.gz
+lando db-export ./db_26.sql.gz
+lando db-import ./db_26.sql.gz
 ```
 
 ## 環境の再現手順
@@ -29,7 +29,7 @@ lando start
 lando composer install
 // デモ用の画像ファイル類配置のため site:install
 lando drush site:install --sites-subdir=default demo_umami --db-url=mysql://drupal8:drupal8@database/drupal8 -y
-lando db-import ./db_25.sql.gz
+lando db-import ./db_26.sql.gz
 lando drush config:import -y
 lando drush user:login
 ```
