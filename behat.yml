@@ -8,7 +8,7 @@ default:
   extensions:
     Behat\MinkExtension:
       goutte: ~
-      base_url: http://drupaltokyo25.lndo.site/ # Replace with your site's URL
+      base_url: http://drupaltokyo26.lndo.site/ # Replace with your site's URL
     Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drupal' 

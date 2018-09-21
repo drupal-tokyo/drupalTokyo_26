@@ -1,4 +1,4 @@
-name: drupal-tokyo-25
+name: drupal-tokyo-26
 recipe: drupal8
 config:
   webroot: web
